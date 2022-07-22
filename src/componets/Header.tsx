@@ -14,7 +14,6 @@ export function Header(){
                         <div className="navbar-nav">
                             <a className="nav-link active" aria-current="page" href="#">Shop</a>
                             <a className="nav-link" href="#">Shoping cart</a>
-
                         </div>
                     </div>
                 </div>
