@@ -10,7 +10,7 @@ type Props = {
 
 export function ShopView({ shop }: Props) {
     return (
-           <Card style={{ width: '18rem', height: '18rem', display: "inline-block", margin: "2em" }}>
+           <Card className='mx-auto m-4' style={{ width: '10rem', height: '10rem' }}>
             <Card.Body>
              <Link to={`/shop/${shop.id}/product`}>
                    <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/sco/thumb/b/bf/KFC_logo.svg/1200px-KFC_logo.svg.png" />
