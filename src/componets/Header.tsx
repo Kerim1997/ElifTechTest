@@ -19,6 +19,9 @@ export function Header(){
                         </div>
                     </div>
                 </div>
+                <div>
+                    <button className='btn btn-outline-danger'>0</button>
+                </div>
             </nav>
         </Col>
     </Row>
