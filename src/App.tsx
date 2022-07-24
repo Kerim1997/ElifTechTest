@@ -23,7 +23,7 @@ function App() {
         <Row className="m-3">
           <ShopList />
           <Routes>
-            <Route path='/' element={1} />
+            <Route path='/' />
             <Route path='/shop/:id/product' element={<ProductList />} />
           </Routes>
         </Row>

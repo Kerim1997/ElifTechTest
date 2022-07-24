@@ -8,5 +8,7 @@ export interface IProduct{
     name:string;
     id:number;
     prise:number;
+    countOfSale:number;
     ref:string;
+
 }
