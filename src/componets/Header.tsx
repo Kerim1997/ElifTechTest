@@ -1,7 +1,9 @@
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 export function Header(){
     return(
-        <div className="row bg-light">
-        <div className="col offset-lg-1 bg-light">
+        <Row className='bg-light'>
+        <Col className="col offset-lg-1 bg-light">
             <nav className="navbar navbar-expand-lg ">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">Food market</a>
@@ -18,7 +20,7 @@ export function Header(){
                     </div>
                 </div>
             </nav>
-        </div>
-    </div>
+        </Col>
+    </Row>
     )
 }

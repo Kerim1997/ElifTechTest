@@ -6,33 +6,34 @@ import { Header } from './componets/Header';
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import { ProductList } from './componets/ProductList';
 import { ShopList } from './componets/ShopList';
-
+import {Cart} from './componets/Cart';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+{/* <Container fluid>
+       <Header/>
+    </Container> */}
 
 function App() {
-
   return (
+ 
     <BrowserRouter>
-      <div className="App container-fluid">
+      <Container fluid>
         <Header />
-        <div className="row m-3">
+        <Row className="m-3">
           <ShopList />
           <Routes>
             <Route path='/' element={1} />
             <Route path='/shop/:id/product' element={<ProductList />} />
           </Routes>
-        </div>
-      </div>
+        </Row>
+      </Container>
     </BrowserRouter>
   );
 }
 
 
-
-
-
 export default App;
-
-
 
 
 // shop -> IShop[]  

@@ -3,6 +3,9 @@ import { useParams } from 'react-router-dom';
 import { IProduct } from '../global';
 import { getProducts } from '../api/GetArratOfShop'
 import { Product } from './Product';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
 
 export function ProductList() {
   const { id } = useParams();
@@ -24,21 +27,18 @@ export function ProductList() {
 
   return (
     <>
-
-      <div className="col-md-9">
-        <div className="container-fluid">
-          <div className="row row-cols-1 row-cols-md-2 g-4 "> {
+      <Col className="col-md-9" style={{overflowY: "scroll", maxHeight:'800px'}}>
+        <Container fluid>
+          <Row className="row-cols-1 row-cols-md-2 g-4 "> {
             products?.map(pr => {
               return (
-
                 <Product key={pr.id} product={pr} />
-
               )
             })
           }
-          </div>
-        </div>
-      </div>
+          </Row>
+        </Container>
+      </Col>
     </>
   )
 
